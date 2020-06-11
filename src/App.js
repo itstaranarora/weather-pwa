@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { fetchWeather } from './api/fetchWeather';
 import './App.css';
+import logo from './assets/logo.png';
 
 const App = () => {
 	const [query, setQuery] = useState('');
@@ -17,6 +18,7 @@ const App = () => {
 
 	return(
 		<div className="main-container">
+			<img src={logo} alt="logo"/>
 			<input type="text"className="search"placeholder="Search"value={query} onChange={(e) => setQuery(e.target.value)} onKeyPress={search} /> 
 			{weather.main && (
 				<div className="city">

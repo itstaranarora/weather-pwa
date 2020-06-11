@@ -20,6 +20,12 @@ html, body, #root {
     flex-direction: column;
 }
 
+.main-container img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2rem;
+}
+
 .search {
     outline: none;
     padding: 20px 7%;
